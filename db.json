@@ -1,6 +1,477 @@
+
 {
   "users": [
-    { "id": 1, "name": "John Doe", "email": "john@example.com" },
-    { "id": 2, "name": "Jane Smith", "email": "jane@example.com" }
+    {
+      "id": "user-1",
+      "name": "Admin User",
+      "email": "admin@trainingportal.com",
+      "phone": "+91 98765 43210",
+      "role": "admin",
+      "password": "admin123",
+      "profileComplete": true,
+      "createdAt": "2024-01-15T10:30:00Z",
+      "lastLogin": "2024-06-25T09:30:00Z",
+      "status": "active",
+      "permissions": ["full_access"]
+    },
+    {
+      "id": "user-2",
+      "name": "John Doe",
+      "email": "john@trainingportal.com",
+      "phone": "+91 98765 43211",
+      "role": "super_admin",
+      "password": "superadmin123",
+      "profileComplete": true,
+      "createdAt": "2024-01-10T08:00:00Z",
+      "lastLogin": "2024-06-25T09:30:00Z",
+      "status": "active",
+      "permissions": ["full_access", "institute_management", "billing", "analytics"]
+    },
+    {
+      "id": "user-3",
+      "name": "Sarah Wilson",
+      "email": "sarah@trainingportal.com",
+      "phone": "+91 98765 43212",
+      "role": "trainer",
+      "password": "trainer123",
+      "profileComplete": true,
+      "createdAt": "2024-02-01T14:20:00Z",
+      "lastLogin": "2024-06-24T16:45:00Z",
+      "status": "active",
+      "permissions": ["course_management", "student_view"]
+    },
+    {
+      "id": "user-4",
+      "name": "Mike Johnson",
+      "email": "mike@trainingportal.com",
+      "phone": "+91 98765 43213",
+      "role": "student",
+      "password": "student123",
+      "profileComplete": true,
+      "createdAt": "2024-03-15T11:10:00Z",
+      "lastLogin": "2024-06-25T08:15:00Z",
+      "status": "active",
+      "permissions": ["course_access"]
+    },
+    {
+      "id": "user-5",
+      "name": "Emily Davis",
+      "email": "emily@trainingportal.com",
+      "phone": "+91 98765 43214",
+      "role": "counsellor",
+      "password": "counsellor123",
+      "profileComplete": true,
+      "createdAt": "2024-02-20T09:30:00Z",
+      "lastLogin": "2024-06-24T17:20:00Z",
+      "status": "active",
+      "permissions": ["lead_management", "student_counselling"]
+    }
+  ],
+  "students": [
+    {
+      "id": "student-1",
+      "studentId": "STU2024001",
+      "name": "Rahul Kumar",
+      "email": "rahul.kumar@email.com",
+      "phone": "+91 98765 43215",
+      "dateOfBirth": "2000-05-15",
+      "gender": "Male",
+      "address": {
+        "street": "123 Main Street",
+        "city": "Mumbai",
+        "state": "Maharashtra",
+        "pincode": "400001"
+      },
+      "course": "Full Stack Development",
+      "batch": "React Batch-15",
+      "branch": "Main Campus",
+      "status": "Active",
+      "enrollmentDate": "2024-03-01",
+      "feesPaid": 45000,
+      "totalFees": 60000,
+      "parentName": "Suresh Kumar",
+      "parentPhone": "+91 98765 43216",
+      "qualification": "B.Tech Computer Science",
+      "experience": "Fresher",
+      "profileImage": "/placeholder.svg",
+      "progress": {
+        "courseCompletion": 65,
+        "assignmentsCompleted": 12,
+        "totalAssignments": 20,
+        "testsPassed": 8,
+        "totalTests": 12
+      }
+    },
+    {
+      "id": "student-2",
+      "studentId": "STU2024002",
+      "name": "Priya Sharma",
+      "email": "priya.sharma@email.com",
+      "phone": "+91 98765 43217",
+      "dateOfBirth": "1999-08-22",
+      "gender": "Female",
+      "address": {
+        "street": "456 Park Avenue",
+        "city": "Delhi",
+        "state": "Delhi",
+        "pincode": "110001"
+      },
+      "course": "Data Science",
+      "batch": "Python Batch-08",
+      "branch": "Branch Office",
+      "status": "Active",
+      "enrollmentDate": "2024-02-15",
+      "feesPaid": 55000,
+      "totalFees": 70000,
+      "parentName": "Rajesh Sharma",
+      "parentPhone": "+91 98765 43218",
+      "qualification": "MCA",
+      "experience": "6 months",
+      "profileImage": "/placeholder.svg",
+      "progress": {
+        "courseCompletion": 80,
+        "assignmentsCompleted": 18,
+        "totalAssignments": 22,
+        "testsPassed": 10,
+        "totalTests": 14
+      }
+    }
+  ],
+  "trainers": [
+    {
+      "id": "trainer-1",
+      "trainerId": "TR001",
+      "name": "Sarah Wilson",
+      "email": "sarah.wilson@trainingportal.com",
+      "phone": "+91 98765 43219",
+      "specialization": "Full Stack Development",
+      "experience": "5 years",
+      "qualifications": ["M.Tech Computer Science", "AWS Certified"],
+      "skills": ["React", "Node.js", "MongoDB", "TypeScript"],
+      "rating": 4.8,
+      "totalStudents": 150,
+      "activeBatches": 3,
+      "profileImage": "/placeholder.svg",
+      "status": "Active",
+      "joinDate": "2023-01-15",
+      "address": {
+        "street": "789 Tech Park",
+        "city": "Bangalore",
+        "state": "Karnataka",
+        "pincode": "560001"
+      },
+      "salary": 75000,
+      "employeeId": "EMP001"
+    },
+    {
+      "id": "trainer-2",
+      "trainerId": "TR002",
+      "name": "David Chen",
+      "email": "david.chen@trainingportal.com",
+      "phone": "+91 98765 43220",
+      "specialization": "Data Science",
+      "experience": "7 years",
+      "qualifications": ["PhD Computer Science", "Google Cloud Certified"],
+      "skills": ["Python", "Machine Learning", "TensorFlow", "SQL"],
+      "rating": 4.9,
+      "totalStudents": 200,
+      "activeBatches": 2,
+      "profileImage": "/placeholder.svg",
+      "status": "Active",
+      "joinDate": "2022-08-20",
+      "address": {
+        "street": "321 Data Street",
+        "city": "Pune",
+        "state": "Maharashtra",
+        "pincode": "411001"
+      },
+      "salary": 85000,
+      "employeeId": "EMP002"
+    }
+  ],
+  "batches": [
+    {
+      "id": "batch-1",
+      "code": "RB15",
+      "name": "React Batch-15",
+      "courseId": "course-1",
+      "trainerId": "trainer-1",
+      "branchId": "branch-1",
+      "subBranchId": null,
+      "startDate": "2024-03-01",
+      "endDate": "2024-08-31",
+      "status": "ongoing",
+      "maxStudents": 30,
+      "enrolledStudents": 28,
+      "schedule": {
+        "days": ["Monday", "Wednesday", "Friday"],
+        "startTime": "09:00",
+        "endTime": "12:00"
+      },
+      "colorTag": "bg-blue-500",
+      "progress": {
+        "courseCompletion": 65,
+        "modulesCompleted": 4,
+        "totalModules": 6
+      }
+    },
+    {
+      "id": "batch-2",
+      "code": "PB08",
+      "name": "Python Batch-08",
+      "courseId": "course-2",
+      "trainerId": "trainer-2",
+      "branchId": "branch-2",
+      "subBranchId": null,
+      "startDate": "2024-02-15",
+      "endDate": "2024-07-15",
+      "status": "ongoing",
+      "maxStudents": 25,
+      "enrolledStudents": 22,
+      "schedule": {
+        "days": ["Tuesday", "Thursday", "Saturday"],
+        "startTime": "14:00",
+        "endTime": "17:00"
+      },
+      "colorTag": "bg-green-500",
+      "progress": {
+        "courseCompletion": 80,
+        "modulesCompleted": 5,
+        "totalModules": 6
+      }
+    }
+  ],
+  "courses": [
+    {
+      "id": "course-1",
+      "name": "Full Stack Development",
+      "description": "Complete web development course covering frontend and backend technologies",
+      "duration": "6 months",
+      "level": "Intermediate",
+      "fees": 60000,
+      "modules": [
+        {
+          "id": "module-1",
+          "name": "Frontend Fundamentals",
+          "chapters": [
+            {
+              "id": "chapter-1",
+              "name": "HTML & CSS",
+              "topics": [
+                {
+                  "id": "topic-1",
+                  "name": "HTML Basics",
+                  "type": "theory",
+                  "duration": 120
+                },
+                {
+                  "id": "topic-2",
+                  "name": "CSS Styling",
+                  "type": "practical",
+                  "duration": 180
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "prerequisites": ["Basic programming knowledge"],
+      "outcomes": ["Build full stack applications", "Deploy to cloud"],
+      "status": "active"
+    },
+    {
+      "id": "course-2",
+      "name": "Data Science",
+      "description": "Comprehensive data science course with machine learning",
+      "duration": "5 months",
+      "level": "Advanced",
+      "fees": 70000,
+      "modules": [
+        {
+          "id": "module-2",
+          "name": "Python for Data Science",
+          "chapters": [
+            {
+              "id": "chapter-2",
+              "name": "NumPy & Pandas",
+              "topics": [
+                {
+                  "id": "topic-3",
+                  "name": "Data Manipulation",
+                  "type": "practical",
+                  "duration": 240
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "prerequisites": ["Programming experience", "Statistics knowledge"],
+      "outcomes": ["Build ML models", "Data analysis"],
+      "status": "active"
+    }
+  ],
+  "fees": [
+    {
+      "id": "fee-1",
+      "studentId": "student-1",
+      "studentName": "Rahul Kumar",
+      "amount": 15000,
+      "type": "Course Fee",
+      "status": "Paid",
+      "dueDate": "2024-03-15",
+      "paidDate": "2024-03-10",
+      "method": "Online",
+      "receiptNumber": "RCP001",
+      "course": "Full Stack Development",
+      "batch": "React Batch-15",
+      "createdAt": "2024-03-10T10:30:00Z"
+    },
+    {
+      "id": "fee-2",
+      "studentId": "student-2",
+      "studentName": "Priya Sharma",
+      "amount": 20000,
+      "type": "Course Fee",
+      "status": "Pending",
+      "dueDate": "2024-06-30",
+      "paidDate": null,
+      "method": null,
+      "receiptNumber": null,
+      "course": "Data Science",
+      "batch": "Python Batch-08",
+      "createdAt": "2024-06-01T14:20:00Z"
+    }
+  ],
+  "leads": [
+    {
+      "id": "lead-1",
+      "name": "Amit Patel",
+      "email": "amit.patel@email.com",
+      "phone": "+91 98765 43221",
+      "course": "Full Stack Development",
+      "source": "Website",
+      "status": "New",
+      "priority": "High",
+      "assignedTo": "user-5",
+      "notes": "Interested in evening batches",
+      "createdAt": "2024-06-20T16:30:00Z",
+      "followUpDate": "2024-06-27T10:00:00Z"
+    },
+    {
+      "id": "lead-2",
+      "name": "Sneha Reddy",
+      "email": "sneha.reddy@email.com",
+      "phone": "+91 98765 43222",
+      "course": "Data Science",
+      "source": "Referral",
+      "status": "Contacted",
+      "priority": "Medium",
+      "assignedTo": "user-5",
+      "notes": "Looking for weekend classes",
+      "createdAt": "2024-06-22T11:15:00Z",
+      "followUpDate": "2024-06-28T14:00:00Z"
+    }
+  ],
+  "institutes": [
+    {
+      "id": "institute-1",
+      "name": "Tech Academy Pro",
+      "email": "admin@techacademy.com",
+      "phone": "+91 98765 43223",
+      "address": "123 Tech Street, Mumbai",
+      "plan": "Pro",
+      "status": "Active",
+      "studentsCount": 250,
+      "revenue": 15000,
+      "joinDate": "2023-05-15",
+      "expiryDate": "2024-05-15",
+      "features": ["Advanced Analytics", "Custom Branding", "API Access"]
+    },
+    {
+      "id": "institute-2",
+      "name": "CodeCraft Institute",
+      "email": "info@codecraft.com",
+      "phone": "+91 98765 43224",
+      "address": "456 Code Avenue, Bangalore",
+      "plan": "Basic",
+      "status": "Active",
+      "studentsCount": 150,
+      "revenue": 8000,
+      "joinDate": "2024-01-20",
+      "expiryDate": "2025-01-20",
+      "features": ["Basic Analytics", "Standard Support"]
+    }
+  ],
+  "branches": [
+    {
+      "id": "branch-1",
+      "name": "Main Campus",
+      "address": "123 Main Street, Mumbai",
+      "phone": "+91 98765 43225",
+      "manager": "John Manager",
+      "capacity": 200,
+      "subBranches": []
+    },
+    {
+      "id": "branch-2",
+      "name": "Branch Office",
+      "address": "456 Branch Road, Pune",
+      "phone": "+91 98765 43226",
+      "manager": "Jane Manager",
+      "capacity": 150,
+      "subBranches": []
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "title": "New Student Enrolled",
+      "message": "Rahul Kumar has enrolled in React Batch-15",
+      "type": "info",
+      "userId": "user-1",
+      "read": false,
+      "createdAt": "2024-06-25T09:00:00Z"
+    },
+    {
+      "id": "notif-2",
+      "title": "Payment Reminder",
+      "message": "Fee payment due for 5 students this week",
+      "type": "warning",
+      "userId": "user-1",
+      "read": false,
+      "createdAt": "2024-06-24T10:30:00Z"
+    }
+  ],
+  "analytics": [
+    {
+      "id": "analytics-1",
+      "date": "2024-06-25",
+      "studentsEnrolled": 15,
+      "revenue": 45000,
+      "coursesCompleted": 3,
+      "activeBatches": 8,
+      "newLeads": 12
+    }
+  ],
+  "settings": [
+    {
+      "id": "settings-1",
+      "key": "institute_name",
+      "value": "Training Portal",
+      "type": "string"
+    },
+    {
+      "id": "settings-2",
+      "key": "currency",
+      "value": "INR",
+      "type": "string"
+    },
+    {
+      "id": "settings-3",
+      "key": "timezone",
+      "value": "Asia/Kolkata",
+      "type": "string"
+    }
   ]
 }
