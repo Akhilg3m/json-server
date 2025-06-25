@@ -1,0 +1,12 @@
+{
+  "name": "json-server-mock-api",
+  "version": "1.0.0",
+  "description": "Mock REST API with CORS enabled",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.3",
+    "cors": "^2.8.5"
+  }
+}
