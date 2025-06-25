@@ -473,5 +473,355 @@
       "value": "Asia/Kolkata",
       "type": "string"
     }
+  ],
+  "permissions": [
+    {
+      "id": "student:view",
+      "name": "View Students",
+      "category": "Student",
+      "description": "View student information, profiles, and enrollment details",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "student:add",
+      "name": "Add Students",
+      "category": "Student",
+      "description": "Create new student records and enroll students",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "student:edit",
+      "name": "Edit Students",
+      "category": "Student",
+      "description": "Modify existing student information and profiles",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "student:delete",
+      "name": "Delete Students",
+      "category": "Student",
+      "description": "Remove student records from the system",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "student:export",
+      "name": "Export Students",
+      "category": "Student",
+      "description": "Export student data and generate reports",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "batch:view",
+      "name": "View Batches",
+      "category": "Batch",
+      "description": "View batch information, schedules, and student lists",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "batch:add",
+      "name": "Add Batches",
+      "category": "Batch",
+      "description": "Create new batches and set schedules",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "batch:edit",
+      "name": "Edit Batches",
+      "category": "Batch",
+      "description": "Modify batch details, schedules, and assignments",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "batch:delete",
+      "name": "Delete Batches",
+      "category": "Batch",
+      "description": "Remove batches from the system",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "batch:manage_students",
+      "name": "Manage Batch Students",
+      "category": "Batch",
+      "description": "Add or remove students from batches",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "fee:view",
+      "name": "View Fees",
+      "category": "Fee",
+      "description": "View fee records, payment status, and outstanding amounts",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "fee:collect",
+      "name": "Collect Fees",
+      "category": "Fee",
+      "description": "Process fee payments and update payment records",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "fee:edit",
+      "name": "Edit Fee Records",
+      "category": "Fee",
+      "description": "Modify fee structures and payment records",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "fee:refund",
+      "name": "Process Refunds",
+      "category": "Fee",
+      "description": "Process fee refunds and adjustments",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "lead:view",
+      "name": "View Leads",
+      "category": "Lead",
+      "description": "View lead information and conversion status",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "lead:add",
+      "name": "Add Leads",
+      "category": "Lead",
+      "description": "Create new lead records and capture inquiries",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "lead:edit",
+      "name": "Edit Leads",
+      "category": "Lead",
+      "description": "Modify lead information and update status",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "lead:convert",
+      "name": "Convert Leads",
+      "category": "Lead",
+      "description": "Convert leads to students and manage conversion process",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "course:view",
+      "name": "View Courses",
+      "category": "Course",
+      "description": "View course content, curriculum, and structure",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "course:add",
+      "name": "Add Courses",
+      "category": "Course",
+      "description": "Create new courses and curriculum",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "course:edit",
+      "name": "Edit Courses",
+      "category": "Course",
+      "description": "Modify course content and curriculum structure",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "course:delete",
+      "name": "Delete Courses",
+      "category": "Course",
+      "description": "Remove courses from the system",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "report:view",
+      "name": "View Reports",
+      "category": "Report",
+      "description": "Access and view various system reports",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "report:generate",
+      "name": "Generate Reports",
+      "category": "Report",
+      "description": "Create custom reports and analytics",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "report:export",
+      "name": "Export Reports",
+      "category": "Report",
+      "description": "Export reports in various formats",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "system:manage_users",
+      "name": "Manage Users",
+      "category": "System",
+      "description": "Create, edit, and manage user accounts",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "system:manage_roles",
+      "name": "Manage Roles",
+      "category": "System",
+      "description": "Create and manage role templates",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "system:manage_permissions",
+      "name": "Manage Permissions",
+      "category": "System",
+      "description": "Create and manage system permissions",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "system:settings",
+      "name": "System Settings",
+      "category": "System",
+      "description": "Access and modify system configuration",
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": "admin",
+      "name": "Admin",
+      "description": "Full administrative access with all permissions except super admin functions",
+      "userCount": 12,
+      "permissions": [
+        "student:view",
+        "student:add", 
+        "student:edit",
+        "student:delete",
+        "student:export",
+        "batch:view",
+        "batch:add",
+        "batch:edit",
+        "batch:delete",
+        "batch:manage_students",
+        "fee:view",
+        "fee:collect",
+        "fee:edit",
+        "fee:refund",
+        "lead:view",
+        "lead:add",
+        "lead:edit",
+        "lead:convert",
+        "course:view",
+        "course:add",
+        "course:edit",
+        "course:delete",
+        "report:view",
+        "report:generate",
+        "report:export",
+        "system:manage_users",
+        "system:settings"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "trainer",
+      "name": "Trainer",
+      "description": "Teaching staff with access to student and batch management",
+      "userCount": 25,
+      "permissions": [
+        "student:view",
+        "student:edit",
+        "batch:view",
+        "batch:edit",
+        "batch:manage_students",
+        "course:view",
+        "course:edit",
+        "report:view"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "counsellor",
+      "name": "Counsellor",
+      "description": "Student counselling and lead management staff",
+      "userCount": 8,
+      "permissions": [
+        "student:view",
+        "student:add",
+        "student:edit",
+        "lead:view",
+        "lead:add",
+        "lead:edit",
+        "lead:convert",
+        "batch:view",
+        "course:view",
+        "report:view"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "accountant",
+      "name": "Accountant",
+      "description": "Financial management and fee collection staff",
+      "userCount": 5,
+      "permissions": [
+        "student:view",
+        "fee:view",
+        "fee:collect",
+        "fee:edit",
+        "fee:refund",
+        "report:view",
+        "report:generate",
+        "report:export"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "reception",
+      "name": "Reception",
+      "description": "Front desk staff with basic access to view information",
+      "userCount": 6,
+      "permissions": [
+        "student:view",
+        "batch:view",
+        "course:view",
+        "lead:view",
+        "lead:add"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "super_admin",
+      "name": "Super Admin",
+      "description": "Platform super administrator with full system access",
+      "userCount": 2,
+      "permissions": [
+        "student:view",
+        "student:add", 
+        "student:edit",
+        "student:delete",
+        "student:export",
+        "batch:view",
+        "batch:add",
+        "batch:edit",
+        "batch:delete",
+        "batch:manage_students",
+        "fee:view",
+        "fee:collect",
+        "fee:edit",
+        "fee:refund",
+        "lead:view",
+        "lead:add",
+        "lead:edit",
+        "lead:convert",
+        "course:view",
+        "course:add",
+        "course:edit",
+        "course:delete",
+        "report:view",
+        "report:generate",
+        "report:export",
+        "system:manage_users",
+        "system:manage_roles",
+        "system:manage_permissions",
+        "system:settings"
+      ],
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
   ]
+
+
 }
